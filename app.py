@@ -31,7 +31,7 @@ def redirect_message():
 if __name__ == '__main__':
     bot.infinity_polling()
     app.run()
-    bot.remove_webhook()
-    bot.set_webhook(url=BOT_URL)
-
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    # bot.remove_webhook()
+    # bot.set_webhook(url=BOT_URL)
+    #
+    # app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
