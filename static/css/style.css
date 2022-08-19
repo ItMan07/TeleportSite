@@ -1,0 +1,175 @@
+/* =================== ПЕРЕМЕННЫЕ ================================ */
+
+:root {
+  --color1: #00fcbdde;
+  --color2: #4a2affd0;
+
+  --shd-color1: #007759ab;
+  --shd-color2: #29178bc7;
+}
+
+body {
+  /* filter: blur(8px); */
+  font-family: "Open Sans",sans-serif;
+}
+
+/* =================== HEADER, FOOTER, SECTION =================== */
+header {
+  padding: 200px;
+
+  background: url(../img/pattern.png), var(--color1);
+  background: url(../img/pattern.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url(../img/pattern.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+  background-size: contain;
+}
+
+section {
+  padding: 100px 0;
+}
+
+footer {
+  padding: 100px 0;
+
+  background: var(--color1);
+  background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+}
+
+/* =================== OTHER CLASSES ============================= */
+
+.header-text {
+  font-size: 40px;
+  font-weight: bold;
+  /* color: #DCDCDCF0; */
+}
+.header-text:hover {
+  font-size: 45px;
+  transition: all 0.2s ease;
+}
+
+.header-btn {
+  background-color: var(--color1);
+  width: 325px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px auto 30px;
+  font-size: 20px;
+  color: var(--bs-black);
+  border: none;
+  box-shadow:6px 6px 15px -5px var(--shd-color1);
+}
+
+.header-btn:hover {
+  background-color: var(--color2);
+  color: var(--bs-white);
+  box-shadow:6px 6px 15px -5px var(--color2);
+  transition: 0.3s ease;
+  /* border: 2px solid var(--color1); */
+}
+
+/* .header-btn:hold {
+  background-color: red;
+  transition: 0.2s ease;
+} */
+
+.header-btn:active {
+  transform: scale(0.95);
+}
+/* .header-blur {
+  backdrop-filter: blur(8px);
+  filter: blur(8px);
+  height: 100px;
+} */
+
+/* Блок: принцип работы */
+.about {
+  background-color: #eee;
+}
+
+/* .about i {
+  font-size: 25px;
+  color: var(--color2);
+} */
+
+.circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle icon {
+  font-size: 35px;
+  color: var(--color2);
+  text-align: center;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--color2);
+  margin: 15px auto 40px;
+}
+
+/* Блок: наши преимущества */
+.advantages h4 {
+  padding: 30px;
+  border: 3px solid var(--color2);
+  border-radius: 10px;
+  box-shadow:6px 6px 15px -5px var(--shd-color2);
+}
+
+.advantages h4:hover {
+  padding: 40px;
+  border-radius: 15px;
+  /* border: 3px solid var(--color1); */
+  transition: 0.4s ease;
+}
+
+/* Форма заказа */
+.form {
+  /* margin: 0 0 100px 30%; */
+  /* padding-left: 100px;
+  padding-right: 100px; */
+
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 2%;
+  margin-bottom: 10%;
+  border: 3px solid var(--color2);
+  border-radius: 20px;
+}
+
+.order-form {
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*margin: 0 auto;*/
+}
+
+/* Цвета */
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+  background-color: var(--color1);
+}
+
+.bg2 {
+  background-color: var(--color2);
+}
